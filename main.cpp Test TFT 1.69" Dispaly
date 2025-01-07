@@ -16,8 +16,8 @@ void setup() {
   // Menampilkan teks "Hello World"
   tft.setTextColor(TFT_WHITE);  // Set warna teks putih
   tft.setTextSize(2);  // Ukuran teks
-  tft.setCursor(10, 10);  // Posisi awal teks
-  tft.println("Hello World!");
+  tft.setCursor(35, 12);  // Posisi awal teks
+  tft.println("YANS COMP BANDUNG");
 
   // Menggambar garis horizontal
   tft.drawLine(0, 40, tft.width(), 40, TFT_RED);  // Garis merah dari kiri ke kanan
