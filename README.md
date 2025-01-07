@@ -62,24 +62,42 @@ To use the display with Arduino, you can download the library from the following
 
 [Download the Library]([https://github.com/yans-comp-bandung](https://github.com/Bodmer/TFT_eSPI/releases/tag/V2.5.43))
 
-### Example Code
+### Example Code (main.cpp)
 
-```cpp
-#include <Wire.h>
-#include <ST7789.h>  // Add the header file for the LCD display
+#include <TFT_eSPI.h>  // Includekan pustaka TFT_eSPI
 
-ST7789 tft = ST7789(TFT_CS, TFT_RST, TFT_DC); // Define pins for CS, RST, DC
+// Membuat objek TFT
+TFT_eSPI tft = TFT_eSPI();  // Objek TFT, gunakan default pin atau sesuaikan sesuai dengan pin yang Anda gunakan
 
 void setup() {
-  tft.init();             
-  tft.setRotation(3);     
-  tft.fillScreen(ST77XX_WHITE);  
-  tft.setTextColor(ST77XX_BLACK);  
-  tft.setTextSize(1);     
-  tft.setCursor(0, 0);    
-  tft.println("Hello World!");  
+  // Inisialisasi TFT
+  tft.init();
+  
+  // Menyetel orientasi layar, 3 untuk orientasi landscape
+  tft.setRotation(3);  
+
+  // Mengatur latar belakang menjadi warna hitam
+  tft.fillScreen(TFT_BLACK);
+
+  // Menampilkan teks "Hello World"
+  tft.setTextColor(TFT_WHITE);  // Set warna teks putih
+  tft.setTextSize(2);  // Ukuran teks
+  tft.setCursor(10, 10);  // Posisi awal teks
+  tft.println("Hello World!");
+
+  // Menggambar garis horizontal
+  tft.drawLine(0, 40, tft.width(), 40, TFT_RED);  // Garis merah dari kiri ke kanan
+
+  // Menggambar persegi panjang
+  tft.drawRect(50, 50, 100, 80, TFT_BLUE);  // Persegi panjang biru
+
+  // Menggambar lingkaran
+  tft.drawCircle(160, 120, 50, TFT_GREEN);  // Lingkaran hijau di tengah
+
+  // Mengisi lingkaran
+  tft.fillCircle(160, 120, 30, TFT_YELLOW);  // Lingkaran isi kuning
 }
 
 void loop() {
-  // You can add more code here to display other information
+  // Tidak perlu kode dalam loop() untuk tes sederhana ini
 }
