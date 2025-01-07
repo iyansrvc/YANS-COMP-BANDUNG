@@ -1,4 +1,5 @@
 # YANS-COMP-BANDUNG
+
 # 1.69"TFT v1.1 (GMT169-01) 240 x 280  4-Wire SPI TFT 1.69" Display lib ESP32-S3 arduino framework
 
 ![LCD Display](https://ae01.alicdn.com/kf/S81f7ddccb54847bcbde724251cc90a732.jpg)
@@ -55,7 +56,7 @@ Connect the display pins to the YD-ESP32-S3-N16R8:
 ## Arduino Library Overview
 To use the display with Arduino, you can download the library from the following link:
 
-[Download the Library](https://github.com/yans-comp-bandung)
+[Download the Library]([https://github.com/yans-comp-bandung](https://github.com/Bodmer/TFT_eSPI/releases/tag/V2.5.43))
 
 ### Example Code
 
