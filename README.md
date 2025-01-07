@@ -1,7 +1,5 @@
 
-#YANS-COMP-BANDUNG   
-
-#1.69" TFT v1.1 (GMT169-01)      
+# YANS-COMP-BANDUNG  #      
 # 1.69"TFT v1.1 (GMT169-01)  TFT 1.69" Display
 # 240 x 280  resolutions
 # 4-Wire SPI 
