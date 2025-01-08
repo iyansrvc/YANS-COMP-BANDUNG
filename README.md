@@ -1,8 +1,8 @@
 
-# YANS-COMP-BANDUNG  #      
+# YANS-COMP-BANDUNG        
 # 1.69"TFT v1.1 (GMT169-01)  TFT 1.69" Display
-# 240 x 280  resolutions
-# 4-Wire SPI 
+  240 x 280  resolutions
+  4-Wire SPI 
 
 TESTED OK with lib TFT_eSPI board YD-ESP32-S3N16R8  Vscode Platformio arduino framework
 
