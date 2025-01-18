@@ -1,4 +1,9 @@
 {
+  "_comment": "Custom board for YD-ESP32-S3",
+  "_instructions": [
+    "1. Create a new folder in the root project, then paste this board configuration.",
+    "2. Paste this board configuration to C:\\Users\\Yans\\.platformio\\platforms\\espressif32@6.4.0 (adjust the path as necessary)."
+  ],
   "build": {
     "arduino": {
       "partitions": "default_16MB.csv",
