@@ -13,7 +13,7 @@ void setup() {
   // Mengatur latar belakang menjadi warna hitam
   tft.fillScreen(TFT_BLACK);
 
-  // Menampilkan teks "Hello World"
+  // Menampilkan teks "YANS COMP BANDUNG"
   tft.setTextColor(TFT_WHITE);  // Set warna teks putih
   tft.setTextSize(2);  // Ukuran teks
   tft.setCursor(35, 12);  // Posisi awal teks
