@@ -15,6 +15,8 @@
 // Example User_Setup files are stored in the "User_Setups" folder. These can be used
 // unmodified or adapted for a particular hardware configuration.
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wcpp"
 #ifndef USER_SETUP_LOADED //  Lets PlatformIO users define settings in
                           //  platformio.ini, see notes in "Tools" folder.
 
